@@ -10,9 +10,9 @@ _August 2021_
     <img src="_readme-img/logos.png">
 </h1>
 
-![capture](capture-ball-game-1.jpg)
+![capture](_readme-img/capture-ball-game-1.jpg)
 
-![capture](capture-ball-game-2.jpg)
+![capture](_readme-img/capture-ball-game-2.jpg)
 
 ## Test localy
 
