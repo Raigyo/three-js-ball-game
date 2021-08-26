@@ -14,16 +14,16 @@ import http from 'http'
 import socketIO from 'socket.io'
 import theBallGame from './theBallGame'
 
-const port: number = 3000
+const PORT: number = parseInt(<string>process.env.PORT, 10) || 3000
 
 class App {
     private server: http.Server
-    private port: number
+    private PORT: number
 
     private io: socketIO.Server
 
-    constructor(port: number) {
-        this.port = port
+    constructor(PORT: number) {
+        this.PORT = PORT
         const app = express()
         app.use(express.static(path.join(__dirname, '../client')))
 
@@ -35,10 +35,10 @@ class App {
     }
 
     public Start() {
-        this.server.listen(this.port, () => {
-            console.log(`Server listening on port ${this.port}.`)
+        this.server.listen(this.PORT, () => {
+            console.log(`Server listening on PORT ${this.PORT}.`)
         })
     }
 }
 
-new App(port).Start()
+new App(PORT).Start()

@@ -25,3 +25,8 @@ npm run dev
 ```
 
 Then visit [localhost:8080](localhost:8080).
+
+## Useful links
+
+-   [Type Assertion](https://basarat.gitbook.io/typescript/type-system/type-assertion)
+-   [Environment variable is not assigning with Typescript](https://stackoverflow.com/questions/50376419/environment-variable-is-not-assigning-with-typescript/50399999)
