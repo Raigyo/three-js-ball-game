@@ -1,10 +1,12 @@
-# Three.js and TypeScript: Ball game
+# Three.js, TypeScript and SocketIO: Ball game
 
 _August 2021_
 
-> 🔨 Learn Threejs, TypeScript and NodeJS to create interactive 3D content on the web. From Udemy [Three.js and TypeScript - Sean Bradley](https://www.udemy.com/course/threejs-tutorials/).
+> 🔨 Learn Threejs, TypeScript and NodeJS to create interactive 3D content on the web: Ball game. From Udemy [Three.js and TypeScript - Sean Bradley](https://www.udemy.com/course/threejs-tutorials/).
 
 ---
+
+Demo on [Heroku](https://raigyo-three-ballgame.herokuapp.com/).
 
 <h1 align="center">
     <img src="_readme-img/logos.png">
