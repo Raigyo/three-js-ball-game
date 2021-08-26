@@ -63,13 +63,11 @@ export default class UI {
         )
 
         document.addEventListener('pointerlockchange', this.lockChangeAlert, false)
-
         ;(
             document.getElementById('screenNameInput') as HTMLInputElement
         ).addEventListener('keyup', (e) => {
             if (e.which === 13) blur()
         })
-
         ;(
             document.getElementById('screenNameInput') as HTMLInputElement
         ).addEventListener('change', (e) => {
@@ -166,7 +164,7 @@ export default class UI {
         this.keyMap[e.key] = e.type === 'keydown'
         const tmpVec = [0, 0]
 
-        if (this.keyMap['w']) {
+        if (this.keyMap['w'] || this.keyMap['z']) {
             tmpVec[0] += Math.cos(this.theBallGame.cameraRotationXZOffset)
             tmpVec[1] -= Math.sin(this.theBallGame.cameraRotationXZOffset)
         }
@@ -174,7 +172,7 @@ export default class UI {
             tmpVec[0] -= Math.cos(this.theBallGame.cameraRotationXZOffset)
             tmpVec[1] += Math.sin(this.theBallGame.cameraRotationXZOffset)
         }
-        if (this.keyMap['a']) {
+        if (this.keyMap['a'] || this.keyMap['q']) {
             tmpVec[0] += Math.sin(this.theBallGame.cameraRotationXZOffset)
             tmpVec[1] += Math.cos(this.theBallGame.cameraRotationXZOffset)
         }
